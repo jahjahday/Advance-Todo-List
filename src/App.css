@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+#light {
+    background: url("./images/bg-desktop-light.jpg");
+    background-repeat: no-repeat;
+    height: 15em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dark {
+    background: url("./images/bg-desktop-dark.jpg");
+    height: 15em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#dark .moon {
+    background: url("./images/icon-moon.svg");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#light .sun {
+    background: url("./images/icon-sun.svg");
 }
 
-.App-link {
-  color: #61dafb;
+#light .down {
+    background: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#light .list{
+    background: white;
+    color: black;
+}
+
+#light .hover {
+    color: grey;
+}
+
+#light .hover:hover {
+    color: black;
+}
+
+@media screen and (min-width: 720px) {
+    #light {
+        background: url("./images/bg-mobile-light.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 15em;
+    }
+
+    #dark {
+        background: url("./images/bg-mobile-dark.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
